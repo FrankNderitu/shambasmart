@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShambaSmart - Farmer Weather Advisory</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>ShambaSmart</h1>
+        <p>Empowering Farmers with Weather Insights</p>
+    </header>
+
+    <main>
+       <!-- Form section where user choooses county and crop-->
+        <div class="form">
+            <label>County:</label>
+            <input type="text" id="countyInput" placeholder="Enter your county name e.g. Nairobi, Mombasa, Kisumu" value="Nairobi">
+
+            <label>Crop:</label>
+            <select id="crop">
+                <option value="maize">Maize</option>
+                <option value="beans">Beans</option>
+                <option value="potatoes">Potatoes</option>
+                <option value="Kale">Kale (Sukuma Wiki)</option>
+            </select>
+
+            <button id="getBtn">Get Weather Forecast & Advice</button>
+            </div>
+
+            <!--Results section will be displayed here but will be hidden initially-->
+            <div id="result" class="hidden">
+                <h2 id="title"></h2>
+                <div id="forecast"></div>
+            </div>
+
+            <!--Save/Load buttons for user preferences-->
+            <div class="profile">
+                <button id="saveBtn">Save Preferences</button>
+                <button id="loadBtn">Load Preferences</button>
+            </div>
+    </main>
+
+<script src="./script.js"></script>
+</body>
+</html>

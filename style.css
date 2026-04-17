@@ -1,0 +1,139 @@
+/* Basic page setup */
+body {
+  font-family: Arial, sans-serif;
+  max-width: 720px;
+  margin: 20px auto;
+  padding: 15px;
+  background: #f4f9f4;        /* Soft light green */
+  color: #333;
+  line-height: 1.6;
+}
+
+/*  Header */
+header {
+  text-align: center;
+  margin-bottom: 35px;
+  padding: 25px 20px;
+  background: linear-gradient(135deg, #2e7d32, #1b5e20);   /* Nice green gradient */
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0 0 8px 0;
+  font-size: 2.4em;
+}
+
+header p {
+  margin: 0;
+  font-size: 1.15em;
+  opacity: 0.95;
+}
+
+/* Form section */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 35px;
+}
+
+label {
+  font-weight: bold;
+  color: #2e7d32;
+  margin-bottom: 6px;
+}
+
+input, select {
+  padding: 14px 16px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background: white;
+}
+
+input:focus, select:focus {
+  border-color: #2e7d32;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.1);
+}
+
+/* Main action button */
+#getBtn {
+  background: #2e7d32;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1em;
+  padding: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 0 3px 8px rgba(46, 125, 50, 0.2);
+}
+
+#getBtn:hover {
+  background: #1b5e20;
+  transform: translateY(-2px);
+}
+
+/* Result area (for weather cards) */
+#result {
+  margin-top: 30px;
+}
+
+.card {
+  background: white;
+  padding: 18px;
+  margin: 12px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-left: 6px solid #2e7d32;
+}
+
+/* Profile buttons */
+.profile {
+  margin-top: 35px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+#saveBtn, #loadBtn {
+  background: #4caf50;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  flex: 1;
+  min-width: 140px;
+}
+
+#saveBtn:hover, #loadBtn:hover {
+  background: #388e3c;
+}
+
+/* Hidden class */
+.hidden {
+  display: none;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  body {
+    padding: 12px;
+    margin: 10px;
+  }
+  
+  header h1 {
+    font-size: 2em;
+  }
+  
+  input, select, button {
+    font-size: 15px;
+  }
+}
