@@ -26,10 +26,10 @@ This project addresses the real challenge faced by Kenyan farmers — unpredicta
 ## 🎯 How to Use
 
 1. Open `index.html` in any modern web browser
-2. Enter your county (e.g., Nairobi, Mombasa, Nakuru)
-3. Select your crop from the dropdown
+2. Select your county from the dropdown
+3. Choose your crop
 4. Click **"Get Weather Forecast & Advice"**
-5. Use **Save Preferences** and **Load Preferences** buttons for faster access next time
+5. Use **Save Preferences** and **Load Preferences** buttons for faster access
 
 **Tip:** The app works great on mobile phones — perfect for farmers in the field.
 
