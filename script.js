@@ -1,6 +1,6 @@
 // SHAMBASMART - Weather Advisor for Kenyan Farmers
 
-const API_KEY = import.meta.env.VITE_API_KEY;
+const API_KEY = "c743253183627b2c7180448ba8337a28";
 
 // 2. Run this code when the page fully loads
 document.addEventListener("DOMContentLoaded", () => {
