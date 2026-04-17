@@ -1,8 +1,6 @@
 // SHAMBASMART - Weather Advisor for Kenyan Farmers
 
-// TODO: Replace this with your own OpenWeatherMap API key
-// Get free key at: https://home.openweathermap.org/api_keys
-const API_KEY = "YOUR_OWN_API_KEY_HERE"; 
+const API_KEY = import.meta.env.VITE_API_KEY;
 
 // 2. Run this code when the page fully loads
 document.addEventListener("DOMContentLoaded", () => {
